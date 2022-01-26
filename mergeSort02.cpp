@@ -25,7 +25,7 @@ void merge(int arr[], int l, int m, int r, int size)
             k++;
         }
     }
-    
+
     /* Copy the remaining elements of first half, if there are any */
     while (i <= m)
     {
@@ -81,7 +81,7 @@ int main()
     {
         cin >> myarray[i];
     }
-    cout << "Before Sorting" << endl;
+    cout << "Before Sorting: " << endl;
     for (int i = 0; i < size; i++)
     {
         cout << myarray[i] << " ";
@@ -89,7 +89,7 @@ int main()
     cout << endl;
     mergeSort(myarray, 0, (size - 1), size); // mergesort(arr,left,right) called
 
-    cout << "After Sorting" << endl;
+    cout << "After Sorting: " << endl;
     for (int i = 0; i < size; i++)
     {
         cout << myarray[i] << " ";
